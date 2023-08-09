@@ -40,20 +40,20 @@ const pecas = {
 }
 
 btnPrev.addEventListener('click', () => {
-    if (robo === 4) {
-        robo = 0
+    if (robo === 0) {
+        robo = 4
     }else {
-        robo++
+        robo--
     }
     console.log(document.querySelector(".robo").src)
     document.querySelector(".robo").src = robos[robo]
 })
 
 btnNext.addEventListener('click', () => {
-        if (robo === 0) {
-            robo = 4
+        if (robo === 4) {
+            robo = 0
         } else {
-            robo--
+            robo++
         }
         console.log(document.querySelector(".robo").src)
         document.querySelector(".robo").src = robos[robo]
